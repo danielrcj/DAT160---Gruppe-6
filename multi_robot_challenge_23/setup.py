@@ -32,6 +32,7 @@ setup(
             'leader = multi_robot_challenge_23.leader:main',
             'bug_robot = multi_robot_challenge_23.bug_robot:main',
             'slam_node = multi_robot_challenge_23.slam_node:main',
+            'aucro_dect = multi_robot_challenge_23.aucro_dect:main',
         ],
     },
 )
