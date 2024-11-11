@@ -57,10 +57,16 @@ def generate_launch_description():
         arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
     )
 
+    launch_ros.actions.Node(
+      package='scoring',
+      executable='scoring',
+      name='scoring')
+
     return LaunchDescription([
         sim_time_arg,
         bug_robot_tb3_0,
         bug_robot_tb3_1,
         simple_slam_node,
         static_transform_publisher,
+        scoring,
     ])
